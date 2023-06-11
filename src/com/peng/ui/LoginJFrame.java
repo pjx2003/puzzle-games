@@ -15,6 +15,7 @@ public class LoginJFrame extends JFrame implements MouseListener {
     static ArrayList<User> allUsers = new ArrayList<>();
 
     static {
+        //添加2个用户
         allUsers.add(new User("zhangsan", "123"));
         allUsers.add(new User("lisi", "1234"));
     }
@@ -23,13 +24,11 @@ public class LoginJFrame extends JFrame implements MouseListener {
     JButton register = new JButton();
 
     JTextField username = new JTextField();
-    //JTextField password = new JTextField();
     JPasswordField password = new JPasswordField();
     JTextField code = new JTextField();
 
     //正确的验证码
     JLabel rightCode = new JLabel();
-
 
     public LoginJFrame() {
         //初始化界面
@@ -49,7 +48,6 @@ public class LoginJFrame extends JFrame implements MouseListener {
         this.getContentPane().add(usernameText);
 
         //2.添加用户名输入框
-
         username.setBounds(195, 134, 200, 30);
         this.getContentPane().add(username);
 

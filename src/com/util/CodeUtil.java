@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class CodeUtil {
 
+    //验证码
     public static String getCode(){
         //1.创建一个集合
         ArrayList<Character> list = new ArrayList<>();//52  索引的范围：0 ~ 51
